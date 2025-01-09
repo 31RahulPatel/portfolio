@@ -1,0 +1,96 @@
+/* Contact Me Section */
+.contact-me-section {
+  padding: 2rem;
+  text-align: center;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Theme */
+.contact-me-section.dark {
+  background-color: #121212;
+  color: #fff;
+}
+
+.contact-me-section.light {
+  background-color: #f5f5f5;
+  color: #000;
+}
+
+.contact-me-heading {
+  font-size: 3rem;
+  font-weight: bold;
+  color: rgb(137, 23, 137);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact-me-form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #007bff;
+}
+
+/* Dark Mode - Form Fields */
+.contact-me-section.dark .form-group input,
+.contact-me-section.dark .form-group textarea {
+  background-color: #1e1e1e;
+  color: #fff;
+  border-color: #333;
+}
+
+.contact-me-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-me-button:hover {
+  background-color: #0056b3;
+}
+
+/* Dark Mode - Button */
+.contact-me-section.dark .contact-me-button {
+  background-color: #0056b3;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .contact-me-form {
+      padding: 0 1rem;
+  }
+
+  .contact-me-button {
+      width: 100%;
+  }
+}

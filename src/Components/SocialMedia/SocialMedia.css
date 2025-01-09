@@ -1,0 +1,63 @@
+/* Social Media Section */
+.social-media-section {
+    padding: 2rem;
+    text-align: center;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Dark Theme */
+  .social-media-section.dark {
+    background-color: #121212;
+    color: #fff;
+  }
+  
+  /* Light Theme */
+  .social-media-section.light {
+    background-color: #f5f5f5;
+    color: #000;
+  }
+  
+  .social-media-heading {
+    font-size: 3rem;
+  font-weight: bold;
+  color: rgb(137, 23, 137);
+  margin-bottom: 20px;
+  text-align: center;
+  }
+  
+  .social-media-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .social-media-link {
+    text-decoration: none;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-media-link:hover {
+    transform: scale(1.1);
+  }
+  
+  .social-media-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 20%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .social-media-icon:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .social-media-icon {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  

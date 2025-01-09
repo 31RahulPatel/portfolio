@@ -1,0 +1,105 @@
+/* Navbar Styles for both light and dark modes */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px 20px;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Dark theme navbar */
+.navbar.dark {
+  background: rgba(0, 0, 0, 0.7); /* Dark background with transparency */
+  color: white;
+}
+
+/* Light theme navbar */
+.navbar.light {
+  background: rgba(255, 255, 255, 0.6); /* Light background with transparency */
+  color: black;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: inherit; /* Inherit color based on the theme */
+}
+
+/* Navbar links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: inherit; /* Inherit color based on the theme */
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #007bff; /* Accent color for hover */
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: inherit; /* Inherit color based on the theme */
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Dark Mode - Navbar toggle icon */
+.navbar.dark .menu-toggle {
+  color: white;
+}
+
+/* Light Mode - Navbar toggle icon */
+.navbar.light .menu-toggle {
+  color: black;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: rgba(255, 255, 255, 0.8); /* White with more opacity for the dropdown */
+    backdrop-filter: blur(10px); /* Blur for the dropdown menu */
+    flex-direction: column;
+    width: 200px;
+    height: auto;
+    transform: translateX(100%);
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links.open {
+    transform: translateX(0);
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+}

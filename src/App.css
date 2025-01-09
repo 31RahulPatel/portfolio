@@ -1,38 +1,45 @@
-.App {
-  text-align: center;
+/* General styles for both modes */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App.light {
+  background-color: #fff;
+  color: #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App.dark {
+  background-color: #333;
+  color: #fff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.theme-toggle {
+  background-color: transparent;
+  color: rgb(110, 52, 112);
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  position: fixed;
+  top: 100px;
+  right: 40px;
+  z-index: 10;
+  padding: 10px;
+  border-radius: 50%;
+  transition: color 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.theme-toggle:hover {
+  color: #007bff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Optional: If you want to give a background color on hover */
+.theme-toggle:hover {
+  background-color: rgba(0, 123, 255, 0.1);
+}
+
+/* Customize the icon size */
+.theme-toggle svg {
+  font-size: 1.8rem;
 }
