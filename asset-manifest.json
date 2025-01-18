@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.c92a6e93.css",
-    "main.js": "/portfolio/static/js/main.efee4781.js",
+    "main.js": "/portfolio/static/js/main.dff737e2.js",
     "static/js/453.ed3810f9.chunk.js": "/portfolio/static/js/453.ed3810f9.chunk.js",
     "static/media/certi3_page-0001.jpg": "/portfolio/static/media/certi3_page-0001.a4539292f4a19da238a8.jpg",
     "static/media/certi1_page-0001.jpg": "/portfolio/static/media/certi1_page-0001.b5e403fb2f16dd98bb72.jpg",
@@ -11,6 +11,7 @@
     "static/media/project1.jpg": "/portfolio/static/media/project1.b15461721277ebab95d0.jpg",
     "static/media/project3.png": "/portfolio/static/media/project3.de10c7e1812907832c55.png",
     "static/media/blog2.webp": "/portfolio/static/media/blog2.788947de978be848cf8a.webp",
+    "static/media/img101.avif": "/portfolio/static/media/img101.5d7cbd9b26c9f0b5a309.avif",
     "static/media/project2.webp": "/portfolio/static/media/project2.91c4895cd2f2ce08f84f.webp",
     "static/media/educat01.png": "/portfolio/static/media/educat01.e146970cf9b825646122.png",
     "static/media/aws-knowledge-architecting.png": "/portfolio/static/media/aws-knowledge-architecting.1ff315fae63e3610761c.png",
@@ -18,11 +19,11 @@
     "static/media/aws-knowledge-cloud-essentials.png": "/portfolio/static/media/aws-knowledge-cloud-essentials.230d5021fa7286f285e9.png",
     "index.html": "/portfolio/index.html",
     "main.c92a6e93.css.map": "/portfolio/static/css/main.c92a6e93.css.map",
-    "main.efee4781.js.map": "/portfolio/static/js/main.efee4781.js.map",
+    "main.dff737e2.js.map": "/portfolio/static/js/main.dff737e2.js.map",
     "453.ed3810f9.chunk.js.map": "/portfolio/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c92a6e93.css",
-    "static/js/main.efee4781.js"
+    "static/js/main.dff737e2.js"
   ]
 }
