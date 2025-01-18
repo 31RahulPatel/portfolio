@@ -4,23 +4,25 @@ import "./Blogs.css";
 import blog1 from "../Assets/Blog1.jpg";
 import blog2 from "../Assets/blog2.webp";
 import blog3 from "../Assets/Blog1.jpg";
+import blog4 from "../Assets/img101.avif";
+
 
 
 const blogs = [
   {
     id: 1,
-    title: "Understanding React Hooks",
+    title: "AWS Resources",
     description:
-      "A comprehensive guide to React Hooks and how they simplify state management.",
-    link: "https://example.com/react-hooks",
+      "A comprehensive guide to AWS resources that will make you master the aws skills.",
+    link: "https://rahulpatel.hashnode.dev/must-have-aws-resources-for-students-learning-and-growth",
     image: blog1,
   },
   {
     id: 2,
     title: "Introduction to AWS DevOps",
     description:
-      "An overview of AWS DevOps tools for building automated CI/CD pipelines.",
-    link: "https://example.com/aws-devops",
+      "AWS Reinvest 2024.A small recape  for 2024 reinvest",
+    link: "https://rahulpatel.hashnode.dev/aws-reinvent-2024-whats-different-and-what-we-learned",
     image: blog2,
   },
   {
@@ -35,9 +37,9 @@ const blogs = [
     id: 3,
     title: "Mastering JavaScript",
     description:
-      "Advanced tips and techniques to enhance your JavaScript coding skills.",
-    link: "https://example.com/mastering-js",
-    image: blog2,
+      "How to use EC2 ? Things to remember before using EC2 , Usecase of EC2 and much more...",
+    link: "https://rahulpatel.hashnode.dev/understanding-ec2-in-aws-day-1",
+    image: blog4,
   },
 ];
 

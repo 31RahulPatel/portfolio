@@ -5,7 +5,7 @@ import "./SocialMedia.css";
 const socialLinks = [
   {
     name: "LinkedIn",
-    url: "https://www.linkedin.com",
+    url: "www.linkedin.com/in/rahul-patel3105",
     icon: "https://cdn-icons-png.flaticon.com/512/174/174857.png",
   },
   {
