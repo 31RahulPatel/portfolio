@@ -38,6 +38,7 @@
   display: flex;
   list-style: none;
   transition: transform 0.3s ease-in-out;
+  margin-right: 30px;
 }
 
 .nav-links li {
@@ -87,9 +88,12 @@
     background: rgba(255, 255, 255, 0.8); /* White with more opacity for the dropdown */
     backdrop-filter: blur(10px); /* Blur for the dropdown menu */
     flex-direction: column;
-    width: 200px;
+    width: 100%;
     height: auto;
     transform: translateX(100%);
+    visibility: hidden; /* Hide initially */
+    opacity: 0; /* Fully transparent when hidden */
+    transition: opacity 0.3s ease, visibility 0s 0.3s; /* Transition for visibility */
     text-align: center;
     padding: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -97,6 +101,9 @@
 
   .nav-links.open {
     transform: translateX(0);
+    visibility: visible; /* Make visible */
+    opacity: 1; /* Fade in */
+    transition: opacity 0.3s ease, visibility 0s 0s; /* Remove delay */
   }
 
   .nav-links li {

@@ -1,60 +1,71 @@
-import React from "react";
-import { useTheme } from "../ThemeContext"; // Correct path to ThemeContext
-import { motion } from "framer-motion";
+import React, { useState, useEffect } from "react";
 import "./Profile.css";
-import img from "../Assets/img.jpg";
+import myimg from "../Assets/img.jpg"; // Profile image
+import background from "../Assets/Git.png"; // Background image
 
 const Profile = () => {
-  const { theme } = useTheme(); // Access the current theme (light or dark)
+  const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
+  const [spotlightSize, setSpotlightSize] = useState(100); // Spotlight radius
+
+  const handleMouseMove = (e) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    setCursorPosition({
+      x: e.clientX - rect.left,
+      y: e.clientY - rect.top,
+    });
+  };
+
+  const handleScroll = (e) => {
+    if (e.deltaY > 0) {
+      setSpotlightSize((prev) => Math.min(prev + 10, 150)); // Max size
+    } else {
+      setSpotlightSize((prev) => Math.max(prev - 10, 30)); // Min size
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("wheel", handleScroll);
+    return () => {
+      window.removeEventListener("wheel", handleScroll);
+    };
+  }, []);
 
   return (
-    <motion.section
-      className={`profile ${theme}`}
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1 }}
+    <div
+      className="profile-container"
+      onMouseMove={handleMouseMove}
+      style={{ backgroundImage: `url(${background})` }}
     >
-      <div className="profile-container">
-        <motion.div
-          className="qoutes"
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5, duration: 1 }}
-        >
-          <h1>Innovating Future with Cloud and Creativity</h1>
-        </motion.div>
-        <motion.div
-          className="profile-image"
-          initial={{ opacity: 0, x: -20 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ delay: 1, duration: 1 }}
-        >
-          <div className="image-background">
-            <img src={img} alt="Profile" />
-          </div>
-        </motion.div>
-        <motion.div
-          className="profile-info"
-          initial={{ opacity: 0, x: 20 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ delay: 1.5, duration: 1 }}
-        >
-          <h1>
-            Hello, I'm <span>Rahul Patel</span>
-          </h1>
-          <p>
-            A passionate <strong>Cloud Engineer</strong> and{" "}
-            <strong>Web Developer</strong>
-          </p>
-          <a href="#contact" className="btn">
-            Contact Me
-          </a>
-          <a href="#contact" className="btn">
-            Download CV
-          </a>
-        </motion.div>
+      {/* Spotlight overlay */}
+      <div
+        className="spotlight"
+        style={{
+          maskImage: `radial-gradient(circle ${spotlightSize}px at ${cursorPosition.x}px ${cursorPosition.y}px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%)`,
+          WebkitMaskImage: `radial-gradient(circle ${spotlightSize}px at ${cursorPosition.x}px ${cursorPosition.y}px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%)`,
+        }}
+      ></div>
+
+      {/* Quote Section */}
+      <div className="quote">
+        "The <span className="highlight">only way</span> to do great <span className="highlight">work</span> is to love what you <span className="highlight">do</span>."
       </div>
-    </motion.section>
+
+      {/* Left Panel */}
+      <div className="left-panel">
+        <h1>Rahul patel</h1>
+        <p>Web Developer | Cloud Engineer</p>
+        <div className="buttonss">
+          <button className="btn">Download CV</button>
+          <button className="btn">Contact Me</button>
+          <button className="btn linkedin">LinkedIn</button>
+        </div>
+      </div>
+
+      {/* Right Panel */}
+      <div className="right-panel">
+        <img src={myimg} alt="Profile" className="profile-img" />
+      </div>
+    </div>
   );
 };
 
