@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.5f28f94c.css",
-    "main.js": "/portfolio/static/js/main.98348a1f.js",
+    "main.css": "/portfolio/static/css/main.108b2429.css",
+    "main.js": "/portfolio/static/js/main.a28dc8aa.js",
     "static/js/453.ed3810f9.chunk.js": "/portfolio/static/js/453.ed3810f9.chunk.js",
     "static/media/certi3_page-0001.jpg": "/portfolio/static/media/certi3_page-0001.a4539292f4a19da238a8.jpg",
     "static/media/certi1_page-0001.jpg": "/portfolio/static/media/certi1_page-0001.b5e403fb2f16dd98bb72.jpg",
@@ -19,12 +19,12 @@
     "static/media/img.jpg": "/portfolio/static/media/img.49afcbb36830e473c81f.jpg",
     "static/media/aws-knowledge-cloud-essentials.png": "/portfolio/static/media/aws-knowledge-cloud-essentials.230d5021fa7286f285e9.png",
     "index.html": "/portfolio/index.html",
-    "main.5f28f94c.css.map": "/portfolio/static/css/main.5f28f94c.css.map",
-    "main.98348a1f.js.map": "/portfolio/static/js/main.98348a1f.js.map",
+    "main.108b2429.css.map": "/portfolio/static/css/main.108b2429.css.map",
+    "main.a28dc8aa.js.map": "/portfolio/static/js/main.a28dc8aa.js.map",
     "453.ed3810f9.chunk.js.map": "/portfolio/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5f28f94c.css",
-    "static/js/main.98348a1f.js"
+    "static/css/main.108b2429.css",
+    "static/js/main.a28dc8aa.js"
   ]
 }
