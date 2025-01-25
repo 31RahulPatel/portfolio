@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import "./Profile.css";
 import myimg from "../Assets/img.jpg"; // Profile image
 import background from "../Assets/Git.png"; // Background image
-
 const Profile = () => {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
   const [spotlightSize, setSpotlightSize] = useState(100); // Spotlight radius
@@ -52,12 +51,11 @@ const Profile = () => {
 
       {/* Left Panel */}
       <div className="left-panel">
-        <h1>Rahul patel</h1>
+        <h1>Hello! I am <span className="highlight">Rahul patel</span></h1>
         <p>Web Developer | Cloud Engineer</p>
         <div className="buttonss">
           <button className="btn">Download CV</button>
           <button className="btn">Contact Me</button>
-          <button className="btn linkedin">LinkedIn</button>
         </div>
       </div>
 

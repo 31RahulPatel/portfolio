@@ -10,7 +10,9 @@ const Footer = () => {
   return (
     <footer className={`footer ${theme}`}>
       <div className="footer-content">
-        <p className="footer-text">© {currentYear} Your Name. All Rights Reserved.</p>
+        <p className="footer-text">© {currentYear} Rahul Patel. All Rights Reserved.</p>
+        <br />
+        <p>Made with Heart and brain</p>
         <div className="footer-social-links">
           <a
             href="https://www.linkedin.com"

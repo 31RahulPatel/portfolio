@@ -73,10 +73,14 @@
   padding: 10px 20px;
   cursor: pointer;
   transition: 0.3s;
+  margin: 8px;
 }
+
 
 .btn:hover {
   background-color: purple;
+  padding: 12px 22px;
+  
   color: white;
 }
 
